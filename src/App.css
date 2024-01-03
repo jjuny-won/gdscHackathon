@@ -1,38 +1,75 @@
-.App {
+body {
+  background-color: #58CCFF;
+  font-family: 'MapoHongdaeFreedom', sans-serif;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'MapoHongdaeFreedom';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoHongdaeFreedomA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bingo-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 80vh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.bingo-content {
+  margin-top: 5vh;
+}
+
+.bingo-box {
+  width: 80vw;
+  max-width: 400px;
+  height: 15vh; 
+  background-color: #FFFFFF;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  font-size: 1.5vw;
+}
+
+button {
+  background-color: black;
   color: white;
+  font-size: 2vw; 
+  font-family: 'MapoHongdaeFreedom', sans-serif;
+  padding: 2%;
+  border-radius: 15px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+img{
+  width: 20vw;
+  position: absolute;
+  bottom:5%;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* 반응형 스타일 지정 */
+@media (max-width: 600px) {
+  .bingo-box {
+    width: 90vw;
+    font-size: 5vw;
   }
-  to {
-    transform: rotate(360deg);
+
+  button {
+    font-size: 8vw; 
+    
+  }
+
+  img{
+    width: 70vw;
   }
 }
+

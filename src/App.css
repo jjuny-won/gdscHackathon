@@ -23,12 +23,14 @@ body {
 
 .bingo-content {
   margin-top: 5vh;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 .bingo-box {
   width: 80vw;
   max-width: 400px;
-  height: 15vh; 
+  height: 13vh; 
   background-color: #FFFFFF;
   margin-top: 10%;
   margin-bottom: 10%;
@@ -36,7 +38,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 15px;
-  font-size: 1.5vw;
+  font-size: 27px;
 }
 
 button {
@@ -60,7 +62,7 @@ img{
 @media (max-width: 600px) {
   .bingo-box {
     width: 90vw;
-    font-size: 5vw;
+    font-size: 23px;
   }
 
   button {

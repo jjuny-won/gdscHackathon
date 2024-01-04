@@ -25,11 +25,11 @@ function App() {
       <h1>내 짝꿍은 바로 너!</h1>
 
       <div className="bingo-content">
-        <h2>나의 빙고 시작 조건은</h2>
+        <p>빙고 미션은?</p>
         <div className= "bingo-box">
-        <p>{selectedCondition || '여기에 조건이 표시 됩니다.'}</p>
+        <p>{selectedCondition || '여기에 미션이 표시 됩니다.'}</p>
         </div>
-        <button onClick={getRandomCondition}>조건 뽑기</button>
+        <button onClick={getRandomCondition}>미션 뽑기</button>
 
       </div>
       <img src="https://res.cloudinary.com/startup-grind/image/upload/dpr_2.0,fl_sanitize/v1/gcs/platform-data-dsc/contentbuilder/logo_dark_stacked_5giak2X.svg" alt="GDSC Gif" />
